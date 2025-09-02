@@ -3,6 +3,8 @@ import "./post.css";
 import { format } from "timeago.js";
 import { useEffect, useState } from "react";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 export default function Post({
   _id,
   categories = [],
@@ -25,7 +27,7 @@ export default function Post({
   const imageSrc = photo
     ? photo.startsWith("http")
       ? photo
-      : `http://localhost:5000/images/blog/${photo}`
+      :`${REACT_APP_API_BASE_URL}/images/blog/${photo}`
     : "/fallback.jpg"; // Add fallback image in public folder
 
   return (

@@ -7,6 +7,8 @@ import { injectModels } from "../../Redux/injectModel";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 function Settings(props) {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -84,7 +86,7 @@ function Settings(props) {
       if (file) {
         const data = new FormData();
         data.append("file", file);
-        const res = await axios.post("http://localhost:5000/upload/profile", data);
+        const res = await axios.post(`${REACT_APP_API_BASE_URL}/upload/profile`, data);
         if (res.data.success) {
           updatedUser.profilePic = res.data.filename;
           toast.success("Profile picture updated successfully!", {   
@@ -121,7 +123,7 @@ function Settings(props) {
     }
   };
 
-  const PF = "http://localhost:5000/images/profiles/";
+  const PF = `${REACT_APP_API_BASE_URL}/images/profiles/`;
 
   return (
     <div className="settings">

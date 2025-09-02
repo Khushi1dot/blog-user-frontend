@@ -5,7 +5,10 @@ import { injectModels } from "../../Redux/injectModel";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Facebook, Twitter, CircleUserRound } from "lucide-react";
-import defaulIimg from "../../assests/user_profile.jfif" // Ensure this path is correct
+import defaulIimg from "../../assests/user_profile.jfif" 
+
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 const Register = (props) => {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -36,7 +39,7 @@ const Register = (props) => {
 
       try {
         const res = await axios.post(
-          "http://localhost:5000/upload/profile",
+         `${REACT_APP_API_BASE_URL}/upload/profile`,
           formData
         );
         const filename = res.data.filePath.split("/").pop();

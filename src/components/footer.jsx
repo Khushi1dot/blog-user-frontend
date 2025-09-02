@@ -7,6 +7,8 @@ import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import "./footer.css";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 const Footer = () => {
   const emailRef = useRef();
 
@@ -35,7 +37,7 @@ const Footer = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/v1/newsletter/subscribe", { email });
+      const res = await axios.post(`${REACT_APP_API_BASE_URL}/v1/newsletter/subscribe`, { email });
       const message = res.data.message || "";
 
       if (message.toLowerCase().includes("already subscribed")) {

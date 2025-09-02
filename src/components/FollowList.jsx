@@ -3,6 +3,8 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./FollowList.css";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 function FollowList() {
   const { username } = useParams();
   const navigate = useNavigate();
@@ -13,7 +15,7 @@ function FollowList() {
   useEffect(() => {
     const fetchFollows = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/v1/user/${username}/${selectedTab}`);
+        const res = await axios.get(`${REACT_APP_API_BASE_URL}/v1/user/${username}/${selectedTab}`);
         setUsers(res.data[selectedTab]);
       } catch (err) {
         console.error(`Error fetching ${selectedTab}:`, err);
@@ -61,7 +63,7 @@ function FollowList() {
               <div className="user-info">
                 <Link to={`/user/${user.username}`} className="follow-user-link">
                   <img
-                    src={user.profilePic ? `http://localhost:5000/images/profiles/${user.profilePic}` : "/default-profile.png"}
+                    src={user.profilePic ? `${REACT_APP_API_BASE_URL}/images/profiles/${user.profilePic}` : "/default-profile.png"}
                     alt="profile"
                     className="follow-user-avatar"
                   />

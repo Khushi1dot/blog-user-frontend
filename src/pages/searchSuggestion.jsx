@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./searchSuggestion.css";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -16,7 +18,7 @@ const SearchBar = () => {
       }
 
       try {
-        const res = await axios.get(`http://localhost:5000/v1/post/search-suggestions?q=${query}`);
+        const res = await axios.get(`${REACT_APP_API_BASE_URL}/v1/post/search-suggestions?q=${query}`);
         setSuggestions(res.data);
       } catch (err) {
         console.error("Suggestion fetch error:", err);

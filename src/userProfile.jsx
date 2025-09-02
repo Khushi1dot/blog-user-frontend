@@ -6,6 +6,7 @@ import { format } from "timeago.js";
 import axios from "axios";
 import {jwtDecode }  from "jwt-decode";
 import "./userProfile.css";
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
 
 function UserProfile() {
   const { username } = useParams();
@@ -14,8 +15,8 @@ function UserProfile() {
   const [isFollowing, setIsFollowing] = useState(false);
   const [userId, setUserId] = useState(null);
 
-  const PF = "http://localhost:5000/images/profiles/";
-  const BLOG_IMG = "http://localhost:5000/images/blog/";
+  const PF = `${REACT_APP_API_BASE_URL}/images/profiles/`;
+  const BLOG_IMG =`${REACT_APP_API_BASE_URL}/images/blog/`;
 
   // Decode user ID from JWT token
   useEffect(() => {
@@ -64,7 +65,7 @@ function UserProfile() {
         headers: { Authorization: `Bearer ${token}` },
       };
 
-      const url = `http://localhost:5000/user/${user._id}/${isFollowing ? "unfollow" : "follow"}`;
+      const url = `${REACT_APP_API_BASE_URL}/user/${user._id}/${isFollowing ? "unfollow" : "follow"}`;
       const res = await axios.post(url, {}, config);
 
       if (res.data.success) {

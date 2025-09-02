@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 const SEOSuggester = ({ blogContent, onTitleSuggest }) => {
   const [suggestedTitle, setSuggestedTitle] = useState('');
   const [tags, setTags] = useState([]);
@@ -17,7 +19,7 @@ const SEOSuggester = ({ blogContent, onTitleSuggest }) => {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post("http://localhost:5000/v1/seo/seo-suggestions", {
+      const res = await axios.post(`${REACT_APP_API_BASE_URL}/v1/seo/seo-suggestions`, {
         content: blogContent,
       });
       console.log("SEO Suggestions:", res);

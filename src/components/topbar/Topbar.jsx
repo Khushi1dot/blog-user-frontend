@@ -5,13 +5,15 @@ import { injectModels } from "../../Redux/injectModel";
 import axios from 'axios';
 import GoogleTranslate from "../translator/GoogleTranslator";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
+
 function Topbar(props) {
   const navigate = useNavigate();
   const { user, getUser } = props.auth;
   const isAuthenticated = !!user;
   const [desc, setDesc] = useState("");
   const [selectedLang, setSelectedLang] = useState("");
-  const PF = "http://localhost:5000/images/profiles/";
+  const PF = `${REACT_APP_API_BASE_URL}/images/profiles/`;
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
@@ -28,7 +30,7 @@ function Topbar(props) {
 
   const handleTranslate = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/translate', {
+      const response = await axios.post(`${REACT_APP_API_BASE_URL}/api/translate`, {
         text: desc,
         to: selectedLang
       });

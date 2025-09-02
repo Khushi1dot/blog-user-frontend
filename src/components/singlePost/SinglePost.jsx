@@ -20,6 +20,7 @@ import {
   LinkedinIcon,
 } from "react-share";
 
+const REACT_APP_API_BASE_URL = process.env.REACT_APP_API_BASE_URL
 
 function SinglePost(props) {
   const { id } = useParams();
@@ -31,7 +32,7 @@ function SinglePost(props) {
   const [loading, setLoading] = useState(true);
 const [error, setError] = useState(null);
   const [updateMode, setUpdateMode] = useState(false);
-  const pf = "http://localhost:5000/images/blog/";
+  const pf = `${REACT_APP_API_BASE_URL}/images/blog/`;
 
   const { user, getUser } = props.auth;
   const shareUrl = window.location.href;
@@ -214,7 +215,7 @@ return (
   src={
     post.photo?.startsWith("http")
       ? post.photo
-      :`http://localhost:5000/images/blog/${post.photo}`
+      :`${REACT_APP_API_BASE_URL}/images/blog/${post.photo}`
   }
   alt="Post"
 />
