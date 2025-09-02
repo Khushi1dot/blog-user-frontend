@@ -1,0 +1,345 @@
+/* ==== Container === */
+.write {
+  padding-top: 50px;
+  margin-bottom: 100px;
+  height: 600px;;
+  font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Image Preview === */
+.writeImg {
+  display: block;
+  margin: 0 auto 30px;
+  width: 70vw;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #a79a90;
+}
+
+/* ==== Form Section === */
+.writeForm {
+  margin-top: 20px;
+  padding: 0 150px;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.writeFormGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+    font-family: 'Wix Madefor Display', serif;
+}
+.editorBox {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #c4bcb4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    font-family: 'Wix Madefor Display', serif;
+}
+.tag-display {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-left: 4px solid #4caf50;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.writeIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: rgb(129, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Inputs ==== */
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  font-family: 'Wix Madefor Display',serif;
+  background-color: transparent
+}
+
+.writeInput::placeholder {
+  color: rgb(189, 185, 185);
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.writeInput:focus {
+  outline: none;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Rich Text Editor ==== */
+.writeText .ql-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #c4bcb4;
+  height: 500px;
+  overflow: hidden;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.ql-editor {
+  min-height: 300px;
+  padding: 20px;
+  background-color: #c4bcb4;
+  box-sizing: border-box;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== SEO Section ==== */
+.writeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 30px;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.seoBox {
+  background-color: #3b2f2f;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  padding: 1rem;
+  color:white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    font-family: 'Wix Madefor Display', serif;
+}
+.seo-generate-btn{
+   background-color: #3b2f2f;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 1rem;
+  color:white;
+  font-family: 'Wix Madefor Display', serif;
+}
+
+.tag-display {
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Buttons ==== */
+/* .button-row {
+  display: flex;
+  gap: 10px;
+  margin-top:0rem;
+  flex-wrap: wrap;
+  
+} */
+.writeSubmit {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  color: white;
+  background-color: #3b2f2f;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Wix Madefor Display',serif;
+}
+
+
+.ai-generator {
+  padding: 15px ;
+  border-radius: 10px;
+  position: absolute;
+  top:60px;
+  right: 90px;
+  color: white;
+  background-color: #3b2f2f;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+    font-family: 'Wix Madefor Display', serif;
+}
+/* .image-generator{
+ 
+  padding: 15px ;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  right: 245px;
+ 
+  background-color: #3b2f2f;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Wix Madefor Display', serif;
+} */
+.image-generator {
+  position: absolute;
+  top: 60px;
+  right: 245px;
+  background-color: #3b2f2f;
+  color: white;
+  padding: 10px ;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Wix Madefor Display', serif;
+  outline: none;
+  box-shadow: none;
+}
+.image-generator:focus,
+.image-generator:active {
+  outline: none;
+  box-shadow: none;
+}
+.ai-generator-button {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Wix Madefor Display', serif;
+  padding: 0;
+}
+
+.ai-generator-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+.ai-generator-wrapper {
+  position: relative;
+  display: inline-block;
+  
+}
+.image-generator:hover,
+.ai-generator:hover,
+.writeSubmit:hover {
+  background-color: #5c4848; /* subtle hover effect */
+}
+
+.prompt-box {
+  position: absolute;
+  top: 100%; /* right below the button */
+  left: 0;
+  margin-top: 8px;
+  background-color: #c4b8ac; /* match theme */
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  width: 300px;
+}
+
+.prompt-box input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  background-color: #e7e0d9;
+  color: #333;
+}
+
+.prompt-box button {
+  background-color: #2e1f1a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+    font-family: 'Wix Madefor Display', serif;
+}
+.accept-btn,
+.reject-btn{
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #3b2f2f;
+  background-color: #3b2f2f;
+  cursor: pointer;
+  font-weight: 600;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.accept-btn {
+  background-color: #57789b;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+.reject-btn {
+  background-color: #9d5960;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Grammar Suggestions ==== */
+.grammar-suggestions {
+  margin-top: 20px;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Summary Box ==== */
+.summary-box {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f0f0f0;
+  border-left: 5px solid #007bff;
+    font-family: 'Wix Madefor Display', serif;
+}
+
+/* ==== Language Selector (if any) ==== */
+.lang-select {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+    font-family: 'Wix Madefor Display', serif;
+}

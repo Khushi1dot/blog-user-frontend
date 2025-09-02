@@ -1,0 +1,270 @@
+.home {
+  margin: 0;
+  padding: 0;
+}
+
+.homeMain {
+  margin: 0 auto;
+  padding: 0;
+  /* Optional for layout */
+  width: 100%;
+}
+.topControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Wix Madefor Display ", serif;
+  background-color: #a79a90;
+  color: #111;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  margin: 0;
+  font-weight: 500;
+}
+.stack {
+  width: 100%;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #2f2c29, #a89f94);
+  color: #fff;
+  padding: 3rem 0rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Wix Madefor Display", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar,
+.header {
+  /* or whatever class your topbar uses */
+  margin-bottom: 0;
+}
+
+.main-content {
+  /* or the container holding the search bar */
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.search-container {
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 3rem;
+  margin-right: 10px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: flex-center;
+}
+
+.search-input {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  background-color: #c9c1b7;
+  color: #3b2f2f;
+  font-family: "Wix Madefor Display", serif;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #3b2f2f;
+  opacity: 0.6;
+}
+
+.suggestion-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  font-family: "Wix Madefor Display", serif;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #fff, #e6e1db);
+  -webkit-background-clip: text;
+  font-weight: 400;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInDown 0.8s ease-out;
+  font-family: "Wix Madefor Display", serif;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3cabe;
+  border-radius: 12px;
+  padding: 40px;
+  gap: 40px;
+  height: 450px; /* or increase this if needed */
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: nowrap; /* keep side by side */
+}
+
+.hero .desc-box {
+  flex: 1;
+  background-color: #b9b2a8;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Wix Madefor Display", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .desc-box h2 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: "Wix Madefor Display", serif;
+  color: #3b2f2f;
+}
+
+.hero .desc-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Wix Madefor Display", serif;
+}
+
+.hero button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b2f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Wix Madefor Display", serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #4e342e;
+  max-width: 700px;
+  margin: auto;
+  font-family: "Wix Madefor Display", serif;
+}
+
+.hero .btn {
+  background-color: #4e342e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Wix Madefor Display", serif;
+}
+
+.hero .btn:hover {
+  background-color: #6d4c41;
+}
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 600px;
+  max-height: 380px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.load-more-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.load-more-btn {
+  background-color: #3b2f2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Wix Madefor Display", serif;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #5a4949;
+}

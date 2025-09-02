@@ -1,0 +1,156 @@
+.post {
+  width: 100%;
+  max-width: 500px;        
+  min-height: 380px;  
+   margin: 0 1rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color:transparent;
+   border: 1px solid black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+font-family: 'Wix Madefor Dispaly',serif;
+   overflow: hidden;
+   position: relative;
+ }
+
+
+  .postTitle {
+  font-size: 22px !important;
+}
+ 
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Wix Madefor Dispaly',serif;
+}
+
+.postImg {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Wix Madefor Dispaly',serif;
+}
+
+.postInfo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Wix Madefor Dispaly',serif;
+  padding-bottom: 1rem;
+}
+
+.postCats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: 'Wix Madefor Dispaly',serif;
+}
+
+.postCat {font-family: 'Wix Madefor Dispaly',serif;
+ 
+  font-size: 12px;
+  color: #be9656;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.6rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.postCat:hover {
+  background-color: #e0e0e0;
+}
+
+.postTitle {
+  
+  font-size: 22px;
+ 
+  margin: 0.8rem 0 0.4rem;
+  color: #333;
+  font-family: 'Wix Madefor Dispaly',serif;
+}
+
+
+
+.postDesc {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 1rem;
+  max-height: 10rem; /* Controls height ~5 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.readMore {
+  display: inline;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #333333;
+  text-decoration: none;
+}
+.readMore:hover {
+  text-decoration: underline;
+}
+.postMetaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align */
+  flex-wrap: nowrap;
+  gap: 180px;
+  font-size: 0.95rem;
+  color: #555;
+  font-family: 'Wix Madefor Display', serif;
+  margin-top: 5px;
+
+}
+
+.postAuthor {
+  font-family: 'Wix Madefor Display', serif;
+  color: #3c312d;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.postDate {
+  color: #3c312d;
+  font-size: 0.85rem;
+  display: flex-end;
+  align-items: center;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+.post-info-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c312d;
+  z-index: 2;
+  
+}
+.likes-count,
+.views-count {
+  
+  padding: 4px 10px;
+  border-radius: 5px;
+   pointer-events: auto; 
+}
+
